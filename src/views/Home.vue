@@ -24,7 +24,7 @@
       </div>
 
       <div class="flex w-full">
-          <Contador />
+          <Contdata />
       </div>
 
       <div class="flex w-full items-center justify-center mb-10">
@@ -39,12 +39,12 @@
 </template>
 
 <script>
-import Contador from "../components/Contador.vue";
+import Contdata from "../components/contdata.vue";
 import Background from "../components/background.vue";
 import Carousel from "../components/Carousel.vue";
 
 export default {
   name: "Home",
-  components: { Background, Contador, Carousel },
+  components: { Background, Contdata, Carousel },
 };
 </script>
