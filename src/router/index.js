@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/Home.vue'
 import SurpresaView from '../views/Surpresa.vue'
+import AceitoView from '../views/Aceito.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -11,9 +12,14 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/surpresa',  // Rota de surpresa
+      path: '/surpresa',
       name: 'surpresa',
-      component: SurpresaView  // Defina o componente de surpresa
+      component: SurpresaView
+    },
+    {
+      path: '/aceito',
+      name: 'aceito',
+      component: AceitoView
     },
   ]
 })
